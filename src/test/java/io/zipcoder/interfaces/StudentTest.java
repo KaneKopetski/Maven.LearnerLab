@@ -10,7 +10,7 @@ public class StudentTest {
 
     @Before
     public void setupTest() {
-        Student student = new Student();
+        Student student = new Student(1L, "Name");
         this.student = student;
     }
 
@@ -36,4 +36,6 @@ public class StudentTest {
         Assert.assertTrue(student instanceof Learner);
 
     }
+
+
 }

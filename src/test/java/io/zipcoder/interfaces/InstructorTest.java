@@ -13,13 +13,12 @@ public class InstructorTest {
     Student student3;
     Learner[] learners;
 
-
     @Before
     public void setup() {
-        Instructor instructor = new Instructor();
-        Student student1 = new Student();
-        Student student2 = new Student();
-        Student student3 = new Student();
+        Instructor instructor = new Instructor(1L, "Name");
+        Student student1 = new Student(2L, "Name");
+        Student student2 = new Student(3L, "Name");
+        Student student3 = new Student(4L, "Name");
         this.instructor = instructor;
         this.student1 = student1;
         this.student2 = student2;
@@ -58,4 +57,6 @@ public class InstructorTest {
 
         Assert.assertEquals(expectedNumberOfHours, actualNumberOfHours);
     }
+
+
 }
